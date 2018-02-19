@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Science Quiz</string>
+    <color name="white">#FFFFFF</color>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="txtPew"><a href="http://www.pewinternet.org/2015/09/10/what-the-public-knows-and-does-not-know-about-science/">Source:  Pew Research Center Study</a></string>
+    <!-- quiz 1 -->
+    <string name="quiz1">This picture shows an object in space that has an icy core with a tail of gas and dust that extends millions of miles. What is this?</string>
+    <string name="quiz1_1">A star</string>
+    <string name="quiz1_2">A comet</string>
+    <string name="quiz1_3">An asteroid</string>
+    <string name="quiz1_4">A moon</string>
+    <!-- quiz 2 -->
+    <string name="quiz2">Which kind of waves are used to make and receive cellphone calls?</string>
+    <string name="quiz2_1">Radio waves</string>
+    <string name="quiz2_2">Visible light waves</string>
+    <string name="quiz2_3">Sound waves</string>
+    <string name="quiz2_4">Gravity waves</string>
+    <!-- quiz 3 -->
+    <string name="quiz3">This picture shows three layers of the Earth. Which layer is the hottest?</string>
+    <string name="quiz3_1">The outer layer - the Earth\'s crust</string>
+    <string name="quiz3_2">The middle layer - the Earth\'s mantle</string>
+    <string name="quiz3_3">The inner layer - the Earth\'s core</string>
+    <!-- quiz 4 -->
+    <string name="quiz4">Which of these is the main way that ocean tides are created</string>
+    <string name="quiz4_1">The rotation of the Earth on its axis</string>
+    <string name="quiz4_2">The gravitational pull of the moon</string>
+    <string name="quiz4_3">The gravitational pull on the sun</string>
+    <!-- quiz 5 -->
+    <string name="quiz5">What does a light-year measure?</string>
+    <string name="quiz5_1">Brightness</string>
+    <string name="quiz5_2">Time</string>
+    <string name="quiz5_3">Distance</string>
+    <string name="quiz5_4">Weight</string>
+    <!-- quiz 6 -->
+    <string name="quiz6">Denver, Colorado, is at a higher altitude than Los Angeles, California. Which of these statements is correct?</string>
+    <string name="quiz6_1">Water boils at a lower temperature in Denver than Los Angeles</string>
+    <string name="quiz6_2">Water boils at a higher temperature in Denver than Los Angeles</string>
+    <string name="quiz6_3">Water boils at the same temperature in both Denver and Los Angeles</string>
+    <!-- quiz 7 -->
+    <string name="quiz7">Which of these pictures best illustrates what happens when light passes through a magnifying glass?</string>
+    <string name="quiz7_1">1</string>
+    <string name="quiz7_2">2</string>
+    <string name="quiz7_3">3</string>
+    <string name="quiz7_4">4</string>
+    <!-- quiz 8 -->
+    <string name="quiz8">The loudness of a sound is determined by what property of a sound wave?</string>
+    <string name="quiz8_1">Frequency</string>
+    <string name="quiz8_2">Wavelength</string>
+    <string name="quiz8_3">Velocity or rate of change</string>
+    <string name="quiz8_4">Amplitude or height</string>
+    <!-- quiz 9 -->
+    <string name="quiz9">Which of the following statements best describes the data in the graph below?</string>
+    <string name="quiz9_1">In recent years, the rate of cavities has increased in my countries</string>
+    <string name="quiz9_2">In some countries, people brush their teeth more frequently than in other countries</string>
+    <string name="quiz9_3">The more sugar people eat, the more likely they are to get cavities</string>
+    <string name="quiz9_4">In recent years, the consumption of sugar has increased in many countries</string>
+    <!-- quiz 10 -->
+    <string name="quiz10">Which of the following statements best describes the data in the graph below?</string>
+    <string name="quiz10_1">Sodium chloride</string>
+    <string name="quiz10_2">Uranium</string>
+    <string name="quiz10_3">Nitrogen</string>
+    <string name="quiz10_4">Carbon dioxide</string>
+    <!-- quiz 11 -->
+    <string name="quiz11">Which of these people developed the polio vaccine?</string>
+    <string name="quiz11_1">Marie Curie</string>
+    <string name="quiz11_2">Isaac Newton</string>
+    <string name="quiz11_3">Albert Einstein</string>
+    <string name="quiz11_4">Jonas Salk</string>
+    <!-- quiz 12 -->
+    <string name="quiz12">Which of these terms is defined as the study of how the positions of stars and planets can influence human behavior?</string>
+    <string name="quiz12_1">Astrology</string>
+    <string name="quiz12_2">Alchemy</string>
+    <string name="quiz12_3">Astronomy</string>
+    <string name="quiz12_4">Meteorology</string>
+    <!-- quiz 13 -->
+    <string name="quiz13">Compare Your Quiz Score</string>
+    <string name="quiz13_1">Your total score:</string>
+    <string name="quiz13_2">Total Number of Questions Answered Correctly</string>
+    <string name="quiz13_3">Percentages reflect 3,278 adults that were part of a national survey in 2014.</string>
+    <string name="quiz13_4">Take quiz again</string>
+
+</resources>

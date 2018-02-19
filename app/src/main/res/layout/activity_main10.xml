@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.example.android.sciencequiz.Main3Activity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/space_comet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/quiz9" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@id/text"
+            android:text="@string/quiz9"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="20dp"
+            android:id="@+id/radioGroup">
+
+            <RadioButton android:id="@+id/radioButton1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz9_1"
+                android:background="#e9e9e9"
+                android:layout_marginBottom="16dp"/>
+
+            <RadioButton android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz9_2"
+                android:background="#e9e9e9"
+                android:layout_marginBottom="16dp"/>
+
+            <RadioButton android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz9_3"
+                android:background="#e9e9e9"
+                android:layout_marginBottom="16dp"/>
+
+            <RadioButton android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/quiz9_4"
+                android:background="#e9e9e9" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/answer"
+            android:text=""
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:paddingBottom="16dp"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/scoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Score"
+                android:textSize="16sp"
+                android:paddingRight="8dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/scoreCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toRightOf="@+id/scoreTextView"
+                android:text=""
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/questionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:layout_toLeftOf="@+id/questionNumber"
+                android:text="Question"
+                android:textSize="16sp"
+                android:paddingRight="8dp"/>
+
+            <TextView
+                android:id="@+id/questionNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="16dp"
+                android:text=""
+                android:textSize="16sp"
+                android:paddingRight="20dp"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/nextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#0d46a0"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="15sp"
+            android:layout_marginBottom="8dp"
+            android:layout_gravity="center"
+            android:visibility="invisible"/>
+
+    </LinearLayout>
+
+</ScrollView>
