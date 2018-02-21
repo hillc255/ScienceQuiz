@@ -21,7 +21,6 @@ import android.widget.Toast;
 import java.io.IOException;
 
 
-
 import android.content.Intent;
 import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
@@ -32,7 +31,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-
+/**
+ * This app displays a science quiz with multiple screens
+ * Question 12
+ */
 public class Main13Activity extends AppCompatActivity {
 
     Button nextButton;
@@ -50,13 +52,13 @@ public class Main13Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main13);
 
-        //psss variables from previous activity
+        //Get variables from previous activity
         Intent intent = getIntent();
         int quizNumberIntent = intent.getIntExtra("quizNumber", quizNumber);
         int correctResponseIntent = intent.getIntExtra("correctResponse", correctResponse);
         int incorrectResponseIntent = intent.getIntExtra("incorrectResponse", incorrectResponse);
 
-        //set-get the quiz number from previous activity and increase by 1 then add to textView
+        //Set-get the quiz number from previous activity, increase by 1 then add to textView
         setQuizNumber(quizNumberIntent);
         quizNumber = getQuizNumber();
         quizNumber = quizNumber + 1;
@@ -64,19 +66,18 @@ public class Main13Activity extends AppCompatActivity {
         textView2.setText(quizNumber + "/12");
 
 
-        //set-get the correct and incorrect responses and add it to score textView
+        //Set-get the correct and incorrect responses then add them to score in textView
         setResponses(correctResponseIntent, incorrectResponseIntent);
         correctResponse = getCorrectResponse();
         incorrectResponse = getIncorrectResponse();
         TextView textView1 = (TextView) findViewById(R.id.scoreCount);
         textView1.setText(correctResponse + "/" + incorrectResponse);
 
-        //display radio buttons
+        //Set up radio buttons
         displayRadioButtons();
 
-        //find Next button
+        //Find the Next button and assign a listener
         Button button = (Button) findViewById(R.id.nextButton);
-        //assign a listener to Next button
         button.setOnClickListener(new View.OnClickListener()
 
         {
@@ -90,25 +91,28 @@ public class Main13Activity extends AppCompatActivity {
 
     }
 
-    private void displayRadioButtons(){
+    /**
+     * This method sets up radio button group
+     */
+    private void displayRadioButtons() {
 
         correctResponse = getCorrectResponse();
         incorrectResponse = getIncorrectResponse();
 
-        //radio button 1 is the correct answer
+        //Radio button 1 is the correct answer
         radioButton = (RadioButton) findViewById(R.id.radioButton1);
-        //display correct answer in this textView
-        textView = (TextView)findViewById(R.id.answer);
+        //Display correct answer in this textView
+        textView = (TextView) findViewById(R.id.answer);
 
-        radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
+        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
         radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                //disable all radio buttons once one is checked
+                //Disable all radio buttons once one is checked
                 int max = group.getChildCount();
-                for(int i = 0; i < max; i++){
+                for (int i = 0; i < max; i++) {
                     group.getChildAt(i).setEnabled(false);
                 }
 
@@ -116,29 +120,27 @@ public class Main13Activity extends AppCompatActivity {
                 Button nextButton = (Button) findViewById(R.id.nextButton);
                 if (radioGroup.getCheckedRadioButtonId() == -1) {
                     nextButton.setVisibility(View.GONE);
-                }
-                else{
+                } else {
                     nextButton.setVisibility(View.VISIBLE);
                 }
 
                 RadioButton radiobutton = (RadioButton) findViewById(checkedId);
-                // Set the checked radio button background color from hex string
+                //Set the checked radio button background color from hex string
                 radiobutton.setBackgroundColor(Color.parseColor("#0d46a0"));
                 radiobutton.setTextColor(Color.parseColor("#ffffff"));
 
-                //determine if radio button selection is correct - display correct response
+                //Determine if radio button selection is correct - display correct response
                 if (radioButton.isChecked()) {
                     textView.append("Correct: Astrology is this study.");
                     selectWay = "Correct: Astrology is this study.";
-                    correctResponse = correctResponse  + 1;
-                }
-                else {
+                    correctResponse = correctResponse + 1;
+                } else {
                     textView.append("Incorrect: Astrology is the correct response.");
                     selectWay = "Incorrect: Astrology is the correct response.";
                     incorrectResponse = incorrectResponse + 1;
                 }
 
-                //display correct score
+                //Display correct score
                 displayScoreCounter(correctResponse, incorrectResponse);
 
             }
@@ -146,30 +148,62 @@ public class Main13Activity extends AppCompatActivity {
         });
     }
 
-    private void setQuizNumber(int quizNumberIntent){
+    /**
+     * This method sets the quiz number variable from the previous activity
+     *
+     * @param quizNumberIntent
+     */
+    private void setQuizNumber(int quizNumberIntent) {
         quizNumber = quizNumberIntent;
     }
 
-    private void setResponses(int correctResponseIntent, int incorrectResponseIntent){
+    /**
+     * This method sets the correct and incorrect responses from the previous activity
+     *
+     * @param correctResponseIntent
+     * @param incorrectResponseIntent
+     */
+    private void setResponses(int correctResponseIntent, int incorrectResponseIntent) {
         correctResponse = correctResponseIntent;
         incorrectResponse = incorrectResponseIntent;
     }
 
+    /**
+     * This method gets and returns the quiz number
+     *
+     * @return
+     */
     public int getQuizNumber() {
         return quizNumber;
     }
 
+    /**
+     * This method gets and returns the correct responses
+     *
+     * @return
+     */
     public int getCorrectResponse() {
         return correctResponse;
     }
 
+    /**
+     * This method gets and returns the incorrect responses
+     *
+     * @return
+     */
     public int getIncorrectResponse() {
         return incorrectResponse;
     }
 
-    private void displayScoreCounter(int correctResponse, int incorrectResponse){
+    /**
+     * This method displays the correct and incorrect scores
+     *
+     * @param correctResponse
+     * @param incorrectResponse
+     */
+    private void displayScoreCounter(int correctResponse, int incorrectResponse) {
         TextView scoreTextView = (TextView) findViewById(R.id.scoreCount);
-        scoreTextView.setText(correctResponse + "/" + incorrectResponse );
+        scoreTextView.setText(correctResponse + "/" + incorrectResponse);
     }
 
 }

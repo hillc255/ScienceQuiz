@@ -9,9 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:layout_marginBottom="30dp"
         android:background="@android:color/white"
         android:orientation="vertical">
 
@@ -20,6 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
+            android:contentDescription="@string/desc1"
             android:src="@drawable/quiz1" />
 
         <TextView
@@ -29,7 +30,7 @@
             android:gravity="center"
             android:text="@string/quiz1"
             android:textAllCaps="false"
-            android:textSize="16sp"/>
+            android:textSize="16sp" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
@@ -44,7 +45,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
                 android:background="#e9e9e9"
-                android:text="@string/quiz1_1"/>
+                android:text="@string/quiz1_1" />
 
             <RadioButton
                 android:id="@+id/radioButton2"

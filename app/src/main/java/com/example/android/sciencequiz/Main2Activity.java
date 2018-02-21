@@ -10,7 +10,10 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-
+/**
+ * This app displays a science quiz with multiple screens
+ * Question 1
+ */
 public class Main2Activity extends AppCompatActivity {
 
     Button nextButton;
@@ -35,13 +38,12 @@ public class Main2Activity extends AppCompatActivity {
         displayQuizCounter();
         displayRadioButtons();
 
-        //find the Next button
-        Button button = (Button) findViewById(R.id.nextButton);
-        //assign a listener to the button
+        //Find the Next button and assign a listener
+        Button button = findViewById(R.id.nextButton);
         button.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View view) {
-                //Start the next activity
+                //Start the next activity and pass the variables
                 Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
                 intent.putExtra("quizNumber", quizNumber);
                 intent.putExtra("correctResponse", correctResponse);
@@ -49,30 +51,32 @@ public class Main2Activity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
     }
 
+    /**
+     * This method sets up radio button group
+     */
         private void displayRadioButtons(){
 
-            //radio button 2 is the correct answer
-            radioButton = (RadioButton) findViewById(R.id.radioButton2);
-            //display correct answer in this textView
-            textView = (TextView)findViewById(R.id.answer);
+            //Radio button 2 is the correct answer
+            radioButton = findViewById(R.id.radioButton2);
+            //Display correct answer in this textView
+            textView = findViewById(R.id.answer);
 
-            radioGroup = (RadioGroup)findViewById(R.id.radioGroup);
+            radioGroup = findViewById(R.id.radioGroup);
             radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
 
                 @Override
                 public void onCheckedChanged(RadioGroup group, int checkedId) {
 
-                    //disable all radio buttons once one is checked
+                    //Disable all radio buttons once one is checked
                     int max = group.getChildCount();
                         for(int i = 0; i < max; i++){
                             group.getChildAt(i).setEnabled(false);
                         }
 
                     //Next button set invisible unless radio button is checked
-                    Button nextButton = (Button) findViewById(R.id.nextButton);
+                    Button nextButton = findViewById(R.id.nextButton);
                     if (radioGroup.getCheckedRadioButtonId() == -1) {
                         nextButton.setVisibility(View.GONE);
                     }
@@ -80,12 +84,12 @@ public class Main2Activity extends AppCompatActivity {
                         nextButton.setVisibility(View.VISIBLE);
                     }
 
-                    RadioButton radiobutton = (RadioButton) findViewById(checkedId);
+                    RadioButton radiobutton = findViewById(checkedId);
                     // Set the checked radio button background color from hex string
                     radiobutton.setBackgroundColor(Color.parseColor("#0d46a0"));
                     radiobutton.setTextColor(Color.parseColor("#ffffff"));
 
-                    //determine if radio button selection is correct - display correct response
+                    //Determine if radio button selection is correct or incorrect - display response
                     if (radioButton.isChecked()) {
                         textView.append("Correct: This is a picture of a comet.");
                         selectWay = "Correct: This is a picture of a comet.";
@@ -96,21 +100,29 @@ public class Main2Activity extends AppCompatActivity {
                         selectWay = "Incorrect: This is a picture of a comet.";
                         incorrectResponse = incorrectResponse + 1;
                     }
-                    //display correct score
+                    //Display correct and incorrect score
                     displayScoreCounter(correctResponse, incorrectResponse);
                 }
 
             });
         }
 
-        private void displayQuizCounter(){
+    /**
+     *  This method displays the current quiz number
+     */
+    private void displayQuizCounter(){
             quizNumber = quizNumber + 1;
-            TextView quizTextView = (TextView) findViewById(R.id.questionNumber);
+            TextView quizTextView = findViewById(R.id.questionNumber);
             quizTextView.setText(quizNumber + "/12");
         }
 
-        private void displayScoreCounter(int correctResponse, int incorrectResponse){
-            TextView scoreTextView = (TextView) findViewById(R.id.scoreCount);
+    /**
+     * This method displays the correct and incorrect responses
+     * @param correctResponse
+     * @param incorrectResponse
+     */
+    private void displayScoreCounter(int correctResponse, int incorrectResponse){
+            TextView scoreTextView = findViewById(R.id.scoreCount);
             scoreTextView.setText(correctResponse + "/" + incorrectResponse );
      }
 

@@ -9,7 +9,7 @@
         <!-- Theme UI controls like checkboxes and text fields -->
         <item name="colorAccent">#000000</item>
     </style>
-
+    <!-- Remove Title from ActionBar -->
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

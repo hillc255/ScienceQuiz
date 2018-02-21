@@ -8,18 +8,18 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="center"
-        android:paddingTop="40dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingTop="40dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Science"
-            android:textColor="#0d46a0"
+            android:text="@string/splash1"
             android:textAllCaps="false"
+            android:textColor="#0d46a0"
             android:textSize="40sp"
             android:textStyle="bold" />
 
@@ -27,69 +27,69 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Knowledge"
-            android:textColor="#0d46a0"
+            android:paddingBottom="30dp"
+            android:text="@string/splash2"
             android:textAllCaps="false"
+            android:textColor="#0d46a0"
             android:textSize="40sp"
             android:textStyle="bold" />
 
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="10dp"
+            android:background="#0d46a0"
+            android:text="@string/splash3"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="30sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:gravity="center"
-                android:text="12 Questions"
-                android:textColor="#0d46a0"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:text="Compare Your Score"
-                android:textColor="#0d46a0"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/splash4"
+            android:textColor="#0d46a0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:gravity="center"
-                android:layout_marginBottom="60dp"
-                android:text="Science Facts and Principles"
-                android:textColor="#0d46a0"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/splash5"
+            android:textColor="#0d46a0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <Button
-                android:id="@+id/start_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:background="#0d46a0"
-                android:text="    Start  > "
-                android:layout_gravity="center"
-                android:textAllCaps="false"
-                android:textColor="@android:color/white"
-                android:textSize="30sp" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/splash6"
+            android:textColor="#0d46a0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/txt2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:layout_marginBottom="70dp"
-                android:text="@string/txtPew"
-                android:layout_gravity="center"
-                android:textColor="#0d46a0"
-                android:textColorLink="#0d46a0"
-                android:linksClickable="true"
-                android:textSize="16sp"
-                android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="8dp"
+            android:linksClickable="true"
+            android:text="@string/txtPew"
+            android:textColor="#0d46a0"
+            android:textColorLink="#0d46a0"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
