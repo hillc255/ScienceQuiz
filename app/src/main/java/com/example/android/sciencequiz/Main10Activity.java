@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 /**
  * This app displays a science quiz with multiple screens
- * Question 3
+ * Question 9
  */
 public class Main10Activity extends AppCompatActivity {
 

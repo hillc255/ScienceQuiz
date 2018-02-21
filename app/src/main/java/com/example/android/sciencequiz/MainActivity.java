@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        
+
         //Get the hyperlinked text
         TextView view = findViewById(R.id.txt2);
         view.setMovementMethod(LinkMovementMethod.getInstance());
