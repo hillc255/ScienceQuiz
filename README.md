@@ -16,7 +16,15 @@ Each screen of the quiz, with except for the splash and end screens, uses an Act
 
 Below are 3 screen shots with the splash screen, an unanswered quiz screen and a quiz which has been answered:
 
-![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme1.png)          ![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png)          ![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)
+<p float="left">
+![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme1.png) 
+</p>
+<p align="middle">
+![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png) 
+</p>
+<p float="right">
+![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)
+</p>
 
 Activity screens 3-12 could probably be reduced to a single Activity if I knew how to do this!
 
