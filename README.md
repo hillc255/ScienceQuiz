@@ -20,7 +20,7 @@ Below are 3 screen shots with the splash screen, an unanswered quiz screen and a
 ![Screen of unanswered question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png)
 ![Screen of incorrect answer to the question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)
 
-View the screen capture for the Science Quiz App:
+View the video screen capture for the Science Quiz App:
 <https://vimeo.com/256995185>
 
 ## Motivation
