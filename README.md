@@ -15,13 +15,13 @@ Eight additional images were selected and added to the quiz.
 Each screen of the quiz, with example of the splash and end pages, uses an Activity and Intent to capture the questions and answers along with displaying the radio buttons and images.  Variables of score and question numbers are passed through with intents.
 
 Splash page
-![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme1.png)
+![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme1.gif)
 
 Unanswered question example
-![alt text]https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png)
+![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.gif)
 
 Answered question example
-![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)
+![alt text](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.gif)
 
 Activity screens 3-12 could probably be reduced to a single Activity if I knew how to do this!
 
