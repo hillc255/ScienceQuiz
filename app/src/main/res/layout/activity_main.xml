@@ -3,94 +3,62 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="#000000"
     tools:context=".MainActivity">
 
-    <LinearLayout
+    <RelativeLayout
+        android:id="@+id/relativelayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical"
-        android:paddingTop="40dp">
+        android:layout_height="wrap_content">
 
-        <TextView
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/desc"
+            android:scaleType="centerCrop"
+            android:src="@drawable/earth" />
+
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/splash1"
-            android:textAllCaps="false"
-            android:textColor="#0d46a0"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:paddingBottom="30dp"
-            android:text="@string/splash2"
-            android:textAllCaps="false"
-            android:textColor="#0d46a0"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
-        <Button
-            android:id="@+id/start_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="30dp"
-            android:layout_marginTop="10dp"
-            android:background="#0d46a0"
-            android:text="@string/splash3"
-            android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:textSize="30sp" />
+            android:orientation="vertical">
 
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="@string/splash4"
-            android:textColor="#0d46a0"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/splash1"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="@string/splash5"
-            android:textColor="#0d46a0"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/splash2"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:gravity="center"
-            android:text="@string/splash6"
-            android:textColor="#0d46a0"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/txt2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
-            android:linksClickable="true"
-            android:text="@string/txtPew"
-            android:textColor="#0d46a0"
-            android:textColorLink="#0d46a0"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
+            <Button
+                android:id="@+id/start_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="#000000"
+                android:text="@string/splash3"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>

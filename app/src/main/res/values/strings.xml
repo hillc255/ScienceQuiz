@@ -1,15 +1,12 @@
 <resources>
-    <string name="app_name">Science Quiz</string>
-    <color name="white">#FFFFFF</color>
+    <string name="app_name"></string>
     <string name="title_activity_main2">Main2Activity</string>
-    <string name="txtPew"><a href="http://www.pewinternet.org/2015/09/10/what-the-public-knows-and-does-not-know-about-science/">Source:  Pew Research Center Study</a></string>
+    <color name="white">#FFFFFF</color>
 <!-- Splash page -->
-    <string name="splash1">Science</string>
-    <string name="splash2">Quiz</string>
-    <string name="splash3">\u0020\u0020\u0020\u0020Start\u0020\u0020>\u0020</string>
-    <string name="splash4">12 Questions</string>
-    <string name="splash5">Compare Your Score</string>
-    <string name="splash6">Science Facts and Principles</string>
+    <string name="desc">This is a picture of the earth</string>
+    <string name="splash1">Science Quiz</string>
+    <string name="splash2">12 Questions</string>
+    <string name="splash3">\u0020\u0020\u0020▶\u0020\u0020\u0020</string>
     <!-- quiz 1 -->
     <string name="desc1">This picture shows an object in space that has an icy core with a tail of gas and dust that extends millions of miles.</string>
     <string name="quiz1">This picture shows an object in space that has an icy core with a tail of gas and dust that extends millions of miles. What is this?</string>

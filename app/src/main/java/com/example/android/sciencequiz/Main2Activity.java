@@ -86,7 +86,7 @@ public class Main2Activity extends AppCompatActivity {
 
                     RadioButton radiobutton = findViewById(checkedId);
                     // Set the checked radio button background color from hex string
-                    radiobutton.setBackgroundColor(Color.parseColor("#0d46a0"));
+                    radiobutton.setBackgroundColor(Color.parseColor("#7e7e7e"));
                     radiobutton.setTextColor(Color.parseColor("#ffffff"));
 
                     //Determine if radio button selection is correct or incorrect - display response

@@ -135,7 +135,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginBottom="20dp"
-            android:background="#0d46a0"
+            android:background="#7e7e7e"
             android:text="Next"
             android:textAllCaps="false"
             android:textColor="@android:color/white"
