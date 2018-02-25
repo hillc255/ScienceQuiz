@@ -1,6 +1,7 @@
 ## Synopsis
 
 Name:  Science Quiz
+
 Video: <https://vimeo.com/256995185>
 
 This is an Android quiz application with 12 questions relating to science facts and principles.
