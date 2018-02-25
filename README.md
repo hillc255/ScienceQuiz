@@ -1,6 +1,6 @@
 ## Synopsis
 
-Name:  Science Quiz
+Name:  Science Quiz Android App
 
 Video: <https://vimeo.com/256995185>
 
@@ -9,7 +9,6 @@ This is an Android quiz application with 12 questions relating to science facts 
 The questions and answers with 4 images were developed by the Pew Research Center. <http://www.pewresearch.org/quiz/science-knowledge/>
 
 Eight additional images were selected and added to the quiz.
-
 
 
 ## Code Description
