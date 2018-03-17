@@ -19,7 +19,6 @@
     <dimen name="layout_marginBottomSmall">20dp</dimen>
     <dimen name="layout_marginBottom">30dp</dimen>
     <dimen name="layout_marginLeft">16dp</dimen>
-    <dimen name="layout_marginLeft_Med">20dp</dimen>
     <dimen name="layout_marginLeft_textview">20dp</dimen>
     <dimen name="layout_marginRight">16dp</dimen>
     <!-- padding dimen -->

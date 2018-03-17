@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/questionTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/layout_marginBottom_textview"
+                android:layout_toLeftOf="@+id/questionNumber"
+                android:paddingRight="@dimen/paddingRight_textview"
+                android:text="Question"
+                android:textSize="@dimen/font_sizeSmall" />

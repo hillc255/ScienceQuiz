@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nextButton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_marginBottom="@dimen/button_layout_marginBottom"
+    android:background="@color/grayDark"
+    android:text="Next"
+    android:textAllCaps="false"
+    android:textColor="@color/white"
+    android:textSize="@dimen/button_font_size"
+    android:visibility="invisible" />

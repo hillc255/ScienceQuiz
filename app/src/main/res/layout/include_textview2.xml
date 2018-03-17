@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/scoreTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:paddingLeft="@dimen/paddingLeft_textview"
+                android:paddingRight="@dimen/paddingRight_textview"
+                android:text="Score"
+                android:textSize="@dimen/font_sizeSmall" />

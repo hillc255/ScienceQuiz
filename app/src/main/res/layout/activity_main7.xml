@@ -64,76 +64,14 @@
 
         </RadioGroup>
 
-        <TextView
-            android:id="@+id/answer"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/layout_marginLeft_textview"
-            android:paddingBottom="@dimen/paddingBottom_textview"
-            android:text=""
-            android:textAllCaps="false"
-            android:textSize="@dimen/font_size_textview" />
+        <!-- TextView 1 include file -->
+        <include layout="@layout/include_textview1" />
 
+        <!-- RelativeLayout include file -->
+        <include layout="@layout/include_relativelayout" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="@dimen/layout_marginLeft"
-            android:orientation="horizontal">
-
-
-            <TextView
-                android:id="@+id/scoreTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentLeft="true"
-                android:paddingLeft="@dimen/paddingLeft_textview"
-                android:paddingRight="@dimen/paddingRight_textview"
-                android:text="Score"
-                android:textSize="@dimen/font_sizeSmall" />
-
-            <TextView
-                android:id="@+id/scoreCount"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/layout_marginBottom_textview"
-                android:layout_toRightOf="@+id/scoreTextView"
-                android:text=""
-                android:textSize="@dimen/font_sizeSmall" />
-
-            <TextView
-                android:id="@+id/questionTextView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/layout_marginBottom_textview"
-                android:layout_toLeftOf="@+id/questionNumber"
-                android:paddingRight="@dimen/paddingRight_textview"
-                android:text="Question"
-                android:textSize="@dimen/font_sizeSmall" />
-
-            <TextView
-                android:id="@+id/questionNumber"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:layout_marginBottom="@dimen/layout_marginBottom_textview"
-                android:paddingRight="@dimen/paddingRight_textviewLg"
-                android:text=""
-                android:textSize="@dimen/font_sizeSmall" />
-        </RelativeLayout>
-
-        <Button
-            android:id="@+id/nextButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginBottom="@dimen/button_layout_marginBottom"
-            android:background="@color/grayDark"
-            android:text="Next"
-            android:textAllCaps="false"
-            android:textColor="@color/white"
-            android:textSize="@dimen/button_font_size"
-            android:visibility="invisible" />
+        <!-- Button include file -->
+        <include layout="@layout/include_button" />
 
     </LinearLayout>
 
