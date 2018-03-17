@@ -1,6 +1,37 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
-    <dimen name="font_sizeVLarge">50sp</dimen>
-    <dimen name="font_sizeLarge">40sp</dimen>
+    <!-- font_size -->
+    <dimen name="font_sizeVSmall">12sp</dimen>
+    <dimen name="font_sizeSmall">16sp</dimen>
+    <dimen name="font_sizeMedium">18sp</dimen>
     <dimen name="font_size">20sp</dimen>
+    <dimen name="font_size_textview">16sp</dimen>
+    <dimen name="font_sizeLarge">40sp</dimen>
+    <dimen name="font_sizeVLarge">50sp</dimen>
+    <!-- layout dimen -->
+    <dimen name="layout_marginTopSmall">10dp</dimen>
+    <dimen name="layout_marginTop">16dp</dimen>
+    <dimen name="layout_marginTopLg">20dp</dimen>
+    <dimen name="layout_marginBottomVNarrow">8dp</dimen>
+    <dimen name="layout_marginBottomNarrow">10dp</dimen>
+    <dimen name="layout_marginBottom_textview">16dp</dimen>
+    <dimen name="layout_marginBottomVSmall">16dp</dimen>
+    <dimen name="layout_marginBottomSmall">20dp</dimen>
+    <dimen name="layout_marginBottom">30dp</dimen>
+    <dimen name="layout_marginLeft">16dp</dimen>
+    <dimen name="layout_marginLeft_Med">20dp</dimen>
+    <dimen name="layout_marginLeft_textview">20dp</dimen>
+    <dimen name="layout_marginRight">16dp</dimen>
+    <!-- padding dimen -->
+    <dimen name="paddingRight_textview">8dp</dimen>
+    <dimen name="paddingBottom_textview">16dp</dimen>
+    <dimen name="paddingRight_textviewMed">10dp</dimen>
+    <dimen name="paddingRight_textviewLg">20dp</dimen>
+    <dimen name="paddingLeft_textview">10dp</dimen>
+    <!-- radioGroup and radioButton dimen -->
+    <dimen name="radioGroup_layoutMargin">20dp</dimen>
+    <dimen name="radioButton_layoutMarginBottom">16dp</dimen>
+    <!-- button dimen -->
+    <dimen name="button_layout_marginBottom">8dp</dimen>
+    <dimen name="button_font_size">15sp</dimen>
 </resources>

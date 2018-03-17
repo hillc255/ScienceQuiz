@@ -9,9 +9,9 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/layout_marginBottom"
+        android:layout_marginLeft="@dimen/layout_marginLeft"
+        android:layout_marginRight="@dimen/layout_marginRight"
         android:background="@color/white"
         android:orientation="vertical">
 
@@ -30,20 +30,20 @@
             android:gravity="center"
             android:text="@string/quiz8"
             android:textAllCaps="false"
-            android:textSize="16sp" />
+            android:textSize="@dimen/font_sizeSmall" />
 
         <RadioGroup
             android:id="@+id/radioGroup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/radioGroup_layoutMargin"
             android:orientation="vertical">
 
             <RadioButton
                 android:id="@+id/radioButton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
                 android:background="@color/grayLight"
                 android:text="@string/quiz8_1" />
 
@@ -51,7 +51,7 @@
                 android:id="@+id/radioButton2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
                 android:background="@color/grayLight"
                 android:text="@string/quiz8_2" />
 
@@ -59,7 +59,7 @@
                 android:id="@+id/radioButton3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
                 android:background="@color/grayLight"
                 android:text="@string/quiz8_3" />
 
@@ -75,17 +75,17 @@
             android:id="@+id/answer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:paddingBottom="16dp"
+            android:layout_marginLeft="@dimen/radioGroup_layoutMargin"
+            android:paddingBottom="@dimen/radioButton_layoutMarginBottom"
             android:text=""
             android:textAllCaps="false"
-            android:textSize="16sp" />
+            android:textSize="@dimen/font_sizeSmall" />
 
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="16dp"
+            android:layout_marginLeft="@dimen/layout_marginLeft"
             android:orientation="horizontal">
 
 
@@ -94,39 +94,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
-                android:paddingLeft="10dp"
-                android:paddingRight="8dp"
+                android:paddingLeft="@dimen/paddingLeft_textview"
+                android:paddingRight="@dimen/paddingRight_textview"
                 android:text="Score"
-                android:textSize="16sp" />
+                android:textSize="@dimen/font_sizeSmall" />
 
             <TextView
                 android:id="@+id/scoreCount"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/layout_marginBottom_textview"
                 android:layout_toRightOf="@+id/scoreTextView"
                 android:text=""
-                android:textSize="16sp" />
+                android:textSize="@dimen/font_sizeSmall" />
 
             <TextView
                 android:id="@+id/questionTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="16dp"
+                android:layout_marginBottom="@dimen/font_sizeSmall"
                 android:layout_toLeftOf="@+id/questionNumber"
-                android:paddingRight="8dp"
+                android:paddingRight="@dimen/paddingRight_textview"
                 android:text="Question"
-                android:textSize="16sp" />
+                android:textSize="@dimen/font_sizeSmall" />
 
             <TextView
                 android:id="@+id/questionNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
-                android:layout_marginBottom="16dp"
-                android:paddingRight="20dp"
+                android:layout_marginBottom="@dimen/layout_marginBottom_textview"
+                android:paddingRight="@dimen/paddingRight_textviewLg"
                 android:text=""
-                android:textSize="16sp" />
+                android:textSize="@dimen/font_sizeSmall" />
         </RelativeLayout>
 
         <Button
@@ -134,12 +134,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="@dimen/button_layout_marginBottom"
             android:background="@color/grayDark"
             android:text="Next"
             android:textAllCaps="false"
             android:textColor="@color/white"
-            android:textSize="15sp"
+            android:textSize="@dimen/button_font_size"
             android:visibility="invisible" />
 
     </LinearLayout>
