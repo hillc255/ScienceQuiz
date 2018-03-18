@@ -1,6 +1,8 @@
+#  Science Quiz Android App
+
 ## Synopsis
 
-Name:  Science Quiz Android App
+Name:  Science Quiz
 
 Video: <https://vimeo.com/256995185>
 
