@@ -74,28 +74,6 @@ public class Main13Activity extends AppCompatActivity {
         textView1.setText(correctResponse + "/" + incorrectResponse);
 
         //Set up radio buttons
-        displayRadioButtons();
-
-        //Find the Next button and assign a listener
-        Button button = (Button) findViewById(R.id.nextButton);
-        button.setOnClickListener(new View.OnClickListener()
-
-        {
-            public void onClick(View view) {
-                //Start new activity
-                Intent intent = new Intent(Main13Activity.this, Main14Activity.class);
-                intent.putExtra("correctResponse", correctResponse);
-                startActivity(intent);
-            }
-        });
-
-    }
-
-    /**
-     * This method sets up radio button group
-     */
-    private void displayRadioButtons() {
-
         correctResponse = getCorrectResponse();
         incorrectResponse = getIncorrectResponse();
 
@@ -146,6 +124,20 @@ public class Main13Activity extends AppCompatActivity {
             }
 
         });
+
+        //Find the Next button and assign a listener
+        Button button = (Button) findViewById(R.id.nextButton);
+        button.setOnClickListener(new View.OnClickListener()
+
+        {
+            public void onClick(View view) {
+                //Start new activity
+                Intent intent = new Intent(Main13Activity.this, Main14Activity.class);
+                intent.putExtra("correctResponse", correctResponse);
+                startActivity(intent);
+            }
+        });
+
     }
 
     /**

@@ -112,7 +112,7 @@ public class Main14Activity extends AppCompatActivity {
     }
 
     /**
-     * This method exists the application with a goodbye toast
+     * This method exits the application with a goodbye toast
      */
     private void exitApp() {
         Toast toast = Toast.makeText(getApplicationContext(), "Goodbye", Toast.LENGTH_SHORT);

@@ -53,29 +53,6 @@ public class Main4Activity extends AppCompatActivity {
         textView1.setText(correctResponse + "/" + incorrectResponse);
 
         //Set up radio buttons
-        displayRadioButtons();
-
-        //Find the Next button and assign a listener
-        Button button = findViewById(R.id.nextButton);
-        button.setOnClickListener(new View.OnClickListener()
-
-        {
-            public void onClick(View view) {
-                //Start new activity
-                Intent intent = new Intent(Main4Activity.this, Main5Activity.class);
-                intent.putExtra("quizNumber", quizNumber);
-                intent.putExtra("correctResponse", correctResponse);
-                intent.putExtra("incorrectResponse", incorrectResponse);
-                startActivity(intent);
-            }
-        });
-    }
-
-    /**
-     * This method sets up radio button group
-     */
-    private void displayRadioButtons() {
-
         correctResponse = getCorrectResponse();
         incorrectResponse = getIncorrectResponse();
 
@@ -123,7 +100,23 @@ public class Main4Activity extends AppCompatActivity {
             }
 
         });
+
+        //Find the Next button and assign a listener
+        Button button = findViewById(R.id.nextButton);
+        button.setOnClickListener(new View.OnClickListener()
+
+        {
+            public void onClick(View view) {
+                //Start new activity
+                Intent intent = new Intent(Main4Activity.this, Main5Activity.class);
+                intent.putExtra("quizNumber", quizNumber);
+                intent.putExtra("correctResponse", correctResponse);
+                intent.putExtra("incorrectResponse", incorrectResponse);
+                startActivity(intent);
+            }
+        });
     }
+
 
     /**
      * This method sets the quiz number variable from the previous activity

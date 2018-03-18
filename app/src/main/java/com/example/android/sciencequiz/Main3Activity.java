@@ -52,29 +52,6 @@ public class Main3Activity extends AppCompatActivity {
         textView1.setText(correctResponse + "/" + incorrectResponse);
 
         //Set up radio buttons
-        displayRadioButtons();
-
-        //Find the Next button and assign a listener
-        Button button = findViewById(R.id.nextButton);
-        button.setOnClickListener(new View.OnClickListener()
-
-        {
-            public void onClick(View view) {
-                //Start the next activity and pass the variables
-                Intent intent = new Intent(Main3Activity.this, Main4Activity.class);
-                intent.putExtra("quizNumber", quizNumber);
-                intent.putExtra("correctResponse", correctResponse);
-                intent.putExtra("incorrectResponse", incorrectResponse);
-                startActivity(intent);
-            }
-        });
-    }
-
-    /**
-     * This method sets up radio button group
-     */
-    private void displayRadioButtons() {
-
         correctResponse = getCorrectResponse();
         incorrectResponse = getIncorrectResponse();
 
@@ -120,11 +97,26 @@ public class Main3Activity extends AppCompatActivity {
 
                 //Display correct score
                 displayScoreCounter(correctResponse, incorrectResponse);
-
             }
 
         });
+
+        //Find the Next button and assign a listener
+        Button button = findViewById(R.id.nextButton);
+        button.setOnClickListener(new View.OnClickListener()
+
+        {
+            public void onClick(View view) {
+                //Start the next activity and pass the variables
+                Intent intent = new Intent(Main3Activity.this, Main4Activity.class);
+                intent.putExtra("quizNumber", quizNumber);
+                intent.putExtra("correctResponse", correctResponse);
+                intent.putExtra("incorrectResponse", incorrectResponse);
+                startActivity(intent);
+            }
+        });
     }
+
 
     /**
      * This method sets the quiz number variable from the previous activity
