@@ -20,12 +20,8 @@ public class Main2Activity extends AppCompatActivity {
 
     private RadioGroup radioGroup;
     private RadioButton radioButton;
-
     TextView textView;
-    String selectWay;
-
     String buttonSelection;
-
     int correctResponse;
     int incorrectResponse;
     int quizNumber;
@@ -72,12 +68,10 @@ public class Main2Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct or incorrect - display response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: This is a picture of a comet.");
-                    selectWay = "Correct: This is a picture of a comet.";
+                    textView.setText(R.string.quiz1_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: This is a picture of a comet.");
-                    selectWay = "Incorrect: This is a picture of a comet.";
+                    textView.setText(R.string.quiz1_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
                 //Display correct and incorrect score

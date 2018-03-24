@@ -21,7 +21,6 @@ public class Main7Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
@@ -88,12 +87,10 @@ public class Main7Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct - display correct response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: Water boils at a lower temperature in Denver than Los Angeles.");
-                    selectWay = "Correct: Water boils at a lower temperature in Denver than Los Angeles.";
+                    textView.setText(R.string.quiz6_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: Water boils at a lower temperature in Denver than Los Angeles is the correct answer.");
-                    selectWay = "Incorrect: Water boils at a lower temperature in Denver than Los Angeles is the correct answer.";
+                    textView.setText(R.string.quiz6_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
 

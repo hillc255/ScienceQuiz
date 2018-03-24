@@ -21,7 +21,6 @@ public class Main11Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
@@ -88,12 +87,10 @@ public class Main11Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct - display correct response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: Uranium is needed to make nuclear energy and nuclear weapons.");
-                    selectWay = "Correct: Uranium is needed to make nuclear energy and nuclear weapons.";
+                    textView.setText(R.string.quiz10_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: The correct answer is \"Uranium\".");
-                    selectWay = "Incorrect: The correct answer is \"Uranium\".";
+                    textView.setText(R.string.quiz10_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
 

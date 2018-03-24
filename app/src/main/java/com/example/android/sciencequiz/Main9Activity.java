@@ -21,7 +21,6 @@ public class Main9Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
@@ -88,12 +87,10 @@ public class Main9Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct - display correct response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: The loudness of a sound is determined by amplitude or height.");
-                    selectWay = "Correct: The loudness of a sound is determined by amplitude or height.";
+                    textView.setText(R.string.quiz8_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: Amplitude or height is the correct answer.");
-                    selectWay = "Incorrect: Amplitude or height is the correct answer.";
+                    textView.setText(R.string.quiz8_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
 

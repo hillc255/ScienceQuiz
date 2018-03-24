@@ -22,7 +22,6 @@ public class Main4Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
@@ -86,12 +85,10 @@ public class Main4Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct or incorrect - display response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: The inner layer, called the Earth’s core.");
-                    selectWay = ("Correct: The inner layer, called the Earth’s core.");
+                    textView.setText(R.string.quiz3_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: The inner layer, called the Earth’s core is the correct answer.");
-                    selectWay = "Incorrect: The inner layer, called the Earth’s core is the correct answer.";
+                    textView.setText(R.string.quiz3_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
                 //Display correct score

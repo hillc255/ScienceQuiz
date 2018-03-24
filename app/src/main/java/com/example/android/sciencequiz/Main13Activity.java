@@ -42,7 +42,6 @@ public class Main13Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
@@ -109,12 +108,10 @@ public class Main13Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct - display correct response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: Astrology is this study.");
-                    selectWay = "Correct: Astrology is this study.";
+                    textView.setText(R.string.quiz12_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: Astrology is the correct response.");
-                    selectWay = "Incorrect: Astrology is the correct response.";
+                    textView.setText(R.string.quiz12_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
 

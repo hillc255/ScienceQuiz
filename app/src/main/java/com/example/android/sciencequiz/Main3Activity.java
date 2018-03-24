@@ -21,10 +21,10 @@ public class Main3Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,12 +86,10 @@ public class Main3Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct or incorrect - display response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: Radio waves.");
-                    selectWay = "Correct: Radio waves.";
+                    textView.setText(R.string.quiz2_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: Radio waves is the correct answer.");
-                    selectWay = "Incorrect: Radio waves is the correct answer.";
+                    textView.setText(R.string.quiz2_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
 

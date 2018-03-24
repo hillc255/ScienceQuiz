@@ -21,7 +21,6 @@ public class Main6Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
@@ -88,12 +87,10 @@ public class Main6Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct - display correct response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: A light-year is measured in distance.");
-                    selectWay = "Correct: A light-year is measured in distance..";
+                    textView.setText(R.string.quiz5_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: A light-year is measured in distance is the correct response.");
-                    selectWay = "Incorrect: A light-year is measured in distance is the correct response.";
+                    textView.setText(R.string.quiz5_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
 

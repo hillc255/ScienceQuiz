@@ -22,7 +22,6 @@ public class Main12Activity extends AppCompatActivity {
     private RadioGroup radioGroup;
     private RadioButton radioButton;
     TextView textView;
-    String selectWay;
     String buttonSelection;
     int correctResponse;
     int incorrectResponse;
@@ -89,12 +88,10 @@ public class Main12Activity extends AppCompatActivity {
 
                 //Determine if radio button selection is correct - display correct response
                 if (radioButton.isChecked()) {
-                    textView.append("Correct: Jonas Salk developed the polio vaccine.");
-                    selectWay = "Correct: Jonas Salk developed the polio vaccine.";
+                    textView.setText(R.string.quiz11_correct);
                     correctResponse = correctResponse + 1;
                 } else {
-                    textView.append("Incorrect: Jonas Salk developed the polio vaccine.");
-                    selectWay = "Incorrect: Jonas Salk developed the polio vaccine.";
+                    textView.setText(R.string.quiz11_incorrect);
                     incorrectResponse = incorrectResponse + 1;
                 }
 

@@ -13,6 +13,8 @@
     <string name="quiz1_2">A comet</string>
     <string name="quiz1_3">An asteroid</string>
     <string name="quiz1_4">A moon</string>
+    <string name="quiz1_correct">Correct: This is a picture of a comet.</string>
+    <string name="quiz1_incorrect">Incorrect: This is a picture of a comet.</string>
     <!-- quiz 2 -->
     <string name="desc2">This picture shows waves used to make and receive cellphone calls.</string>
     <string name="quiz2">Which kind of waves are used to make and receive cellphone calls?</string>
@@ -20,18 +22,24 @@
     <string name="quiz2_2">Visible light waves</string>
     <string name="quiz2_3">Sound waves</string>
     <string name="quiz2_4">Gravity waves</string>
+    <string name="quiz2_correct">Correct: Radio waves.</string>
+    <string name="quiz2_incorrect">Incorrect: Radio waves is the correct answer.</string>
     <!-- quiz 3 -->
     <string name="desc3">This picture shows three layers of the Earth.</string>
     <string name="quiz3">This picture shows three layers of the Earth. Which layer is the hottest?</string>
     <string name="quiz3_1">The outer layer - the Earth\'s crust</string>
     <string name="quiz3_2">The middle layer - the Earth\'s mantle</string>
     <string name="quiz3_3">The inner layer - the Earth\'s core</string>
+    <string name="quiz3_correct">Correct: The inner layer, called the Earth’s core.</string>
+    <string name="quiz3_incorrect">Incorrect: The inner layer, called the Earth’s core is the correct answer.</string>
     <!-- quiz 4 -->
     <string name="desc4">This picture shows ocean waves.</string>
     <string name="quiz4">Which of these is the main way that ocean tides are created</string>
     <string name="quiz4_1">The rotation of the Earth on its axis</string>
     <string name="quiz4_2">The gravitational pull of the moon</string>
     <string name="quiz4_3">The gravitational pull on the sun</string>
+    <string name="quiz4_correct">Correct: The gravitational pull of the moon.</string>
+    <string name="quiz4_incorrect">Incorrect: The gravitational pull of the moon is the correct answer.</string>
     <!-- quiz 5 -->
     <string name="desc5">This picture shows position between celestial bodies.</string>
     <string name="quiz5">What does a light-year measure?</string>
@@ -39,12 +47,16 @@
     <string name="quiz5_2">Time</string>
     <string name="quiz5_3">Distance</string>
     <string name="quiz5_4">Weight</string>
+    <string name="quiz5_correct">Correct: A light-year is measured in distance.</string>
+    <string name="quiz5_incorrect">Incorrect: A light-year is measured in distance is the correct response.</string>
     <!-- quiz 6 -->
     <string name="desc6">This picture shows boiling water.</string>
     <string name="quiz6">Denver, Colorado, is at a higher altitude than Los Angeles, California. Which of these statements is correct?</string>
     <string name="quiz6_1">Water boils at a lower temperature in Denver than Los Angeles</string>
     <string name="quiz6_2">Water boils at a higher temperature in Denver than Los Angeles</string>
     <string name="quiz6_3">Water boils at the same temperature in both Denver and Los Angeles</string>
+    <string name="quiz6_correct">Correct: Water boils at a lower temperature in Denver than Los Angeles.</string>
+    <string name="quiz6_incorrect">Incorrect: Water boils at a lower temperature in Denver than Los Angeles is the correct answer.</string>
     <!-- quiz 7 -->
     <string name="desc7">There are 4 pictures displaying possible directions where light passes through a magnifying glass.</string>
     <string name="quiz7">Which of these pictures best illustrates what happens when light passes through a magnifying glass?</string>
@@ -52,6 +64,8 @@
     <string name="quiz7_2">2</string>
     <string name="quiz7_3">3</string>
     <string name="quiz7_4">4</string>
+    <string name="quiz7_correct">Correct: The answer is 3.</string>
+    <string name="quiz7_incorrect">Incorrect: The correct answer is 3.</string>
     <!-- quiz 8 -->
     <string name="desc8">This is a picture of sound waves.</string>
     <string name="quiz8">The loudness of a sound is determined by what property of a sound wave?</string>
@@ -59,6 +73,8 @@
     <string name="quiz8_2">Wavelength</string>
     <string name="quiz8_3">Velocity or rate of change</string>
     <string name="quiz8_4">Amplitude or height</string>
+    <string name="quiz8_correct">Correct: The loudness of a sound is determined by amplitude or height.</string>
+    <string name="quiz8_incorrect">Incorrect: Amplitude or height is the correct answer.</string>
     <!-- quiz 9 -->
     <string name="desc9">This is a picture of a graph vertically displaying "Average Number of decayed teeth per person in different countries" and horizontally displaying "Average sugar consumption".</string>
     <string name="quiz9">Which of the following statements best describes the data in the graph below?</string>
@@ -66,6 +82,8 @@
     <string name="quiz9_2">In some countries, people brush their teeth more frequently than in other countries</string>
     <string name="quiz9_3">The more sugar people eat, the more likely they are to get cavities</string>
     <string name="quiz9_4">In recent years, the consumption of sugar has increased in many countries</string>
+    <string name="quiz9_correct">Correct: \"The more sugar people eat, the more likely they are to get cavities.\"</string>
+    <string name="quiz9_incorrect">Incorrect: The correct answer is \"The more sugar people eat, the more likely they are to get cavities.\"</string>
     <!-- quiz 10 -->
     <string name="desc10">This is a picture of an exploded atom bomb.</string>
     <string name="quiz10">Which of these elements is needed to make nuclear energy and nuclear weapons?</string>
@@ -73,6 +91,8 @@
     <string name="quiz10_2">Uranium</string>
     <string name="quiz10_3">Nitrogen</string>
     <string name="quiz10_4">Carbon dioxide</string>
+    <string name="quiz10_correct">Correct: Uranium is needed to make nuclear energy and nuclear weapons.</string>
+    <string name="quiz10_incorrect">Incorrect: The correct answer is "Uranium".</string>
     <!-- quiz 11 -->
     <string name="desc11">There are 4 pictures of people in the question.</string>
     <string name="quiz11">Which of these people developed the polio vaccine?</string>
@@ -80,6 +100,8 @@
     <string name="quiz11_2">Isaac Newton</string>
     <string name="quiz11_3">Albert Einstein</string>
     <string name="quiz11_4">Jonas Salk</string>
+    <string name="quiz11_correct">Correct: Jonas Salk developed the polio vaccine.</string>
+    <string name="quiz11_incorrect">Incorrect: Jonas Salk developed the polio vaccine.</string>
     <!-- quiz 12 -->
     <string name="desc12">This is a picture of a stylized constellation wheel with zodiac signs.</string>
     <string name="quiz12">Which of these terms is defined as the study of how the positions of stars and planets can influence human behavior?</string>
@@ -87,6 +109,8 @@
     <string name="quiz12_2">Alchemy</string>
     <string name="quiz12_3">Astronomy</string>
     <string name="quiz12_4">Meteorology</string>
+    <string name="quiz12_correct">Correct: Astrology is this study.</string>
+    <string name="quiz12_incorrect">Incorrect: Astrology is the correct response.</string>
     <!-- quiz 13 -->
     <string name="desc13">This is a picture of a graph of the percent of people who answered the some or all of the science questions correctly.</string>
     <string name="quiz13">Compare Your Quiz Score</string>
