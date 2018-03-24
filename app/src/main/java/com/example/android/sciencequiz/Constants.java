@@ -7,9 +7,8 @@ package com.example.android.sciencequiz;
 
 public class Constants {
 
-    // Intent extras
-    //public static final int QUIZ_NUMBER =  quizNumber;
-    // public static final String QUIZ_NUMBER_INTENT =  "intent.getIntExtra(\"quizNumber\", quizNumber)";
-   // public static final int CORRECT_RESPONSE_INTENT =  INTENT_EXTRA + parseInt("(\"correctResponse\", correctResponse)");
-   // public static final int INCORRECT_RESPONSE_INTENT =  INTENT_EXTRA + parseInt("(\"incorrectResponse\", incorrectResponse)");
+    // Strings with intent extras
+    public static final String QUIZ_NUMBER_STRING = "quizNumber";
+    public static final String CORRECT_RESPONSE_STRING = "correctResponse";
+    public static final String INCORRECT_RESPONSE_STRING = "incorrectResponse";
 }

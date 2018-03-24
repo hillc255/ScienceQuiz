@@ -1,35 +1,15 @@
 package com.example.android.sciencequiz;
 
-import android.app.Activity;
-import android.content.Intent;
-import android.database.Cursor;
-import android.graphics.Bitmap;
-import android.graphics.Color;
-import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
-import android.view.View;
-import android.view.Window;
-import android.view.WindowManager;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
-import android.widget.TextView;
-import android.widget.Toast;
-
-import java.io.IOException;
-
-
 import android.content.Intent;
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import static com.example.android.sciencequiz.Constants.*;
 
 /**
  * This app displays a science quiz with multiple screens
@@ -53,9 +33,9 @@ public class Main13Activity extends AppCompatActivity {
 
         //Get variables from previous activity
         Intent intent = getIntent();
-        int quizNumberIntent = intent.getIntExtra("quizNumber", quizNumber);
-        int correctResponseIntent = intent.getIntExtra("correctResponse", correctResponse);
-        int incorrectResponseIntent = intent.getIntExtra("incorrectResponse", incorrectResponse);
+        int quizNumberIntent = intent.getIntExtra(QUIZ_NUMBER_STRING, quizNumber);
+        int correctResponseIntent = intent.getIntExtra(CORRECT_RESPONSE_STRING, correctResponse);
+        int incorrectResponseIntent = intent.getIntExtra(INCORRECT_RESPONSE_STRING, incorrectResponse);
 
         //Set-get the quiz number from previous activity, increase by 1 then add to textView
         setQuizNumber(quizNumberIntent);
@@ -130,7 +110,7 @@ public class Main13Activity extends AppCompatActivity {
             public void onClick(View view) {
                 //Start new activity
                 Intent intent = new Intent(Main13Activity.this, Main14Activity.class);
-                intent.putExtra("correctResponse", correctResponse);
+                intent.putExtra(CORRECT_RESPONSE_STRING, correctResponse);
                 startActivity(intent);
             }
         });

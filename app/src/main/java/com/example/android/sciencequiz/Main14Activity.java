@@ -13,6 +13,8 @@ import android.widget.CompoundButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static com.example.android.sciencequiz.Constants.CORRECT_RESPONSE_STRING;
+
 /**
  * Summary screen in the Science Quiz
  */
@@ -23,7 +25,6 @@ public class Main14Activity extends AppCompatActivity {
     TextView textView;
     int correctResponse;
     String finalScoreCount;
-    String name = "Claudia";
     boolean bExit;
     boolean bStart;
 
@@ -35,7 +36,7 @@ public class Main14Activity extends AppCompatActivity {
 
         //Get variables from previous activity//psss variables from previous activity
         Intent intent = getIntent();
-        int correctResponseIntent = intent.getIntExtra("correctResponse", correctResponse);
+        int correctResponseIntent = intent.getIntExtra(CORRECT_RESPONSE_STRING, correctResponse);
 
         //Set-get the correct and incorrect responses and add it to score textView
         setCorrectResponse(correctResponseIntent);

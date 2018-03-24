@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
+import static com.example.android.sciencequiz.Constants.*;
 
 /**
  * This app displays a science quiz with multiple screens
@@ -86,9 +87,9 @@ public class Main2Activity extends AppCompatActivity {
             public void onClick(View view) {
                 //Start the next activity and pass the variables
                 Intent intent = new Intent(Main2Activity.this, Main3Activity.class);
-                intent.putExtra("quizNumber", quizNumber);
-                intent.putExtra("correctResponse", correctResponse);
-                intent.putExtra("incorrectResponse", incorrectResponse);
+                intent.putExtra(QUIZ_NUMBER_STRING, quizNumber);
+                intent.putExtra(CORRECT_RESPONSE_STRING, correctResponse);
+                intent.putExtra(INCORRECT_RESPONSE_STRING, incorrectResponse);
                 startActivity(intent);
             }
         });
