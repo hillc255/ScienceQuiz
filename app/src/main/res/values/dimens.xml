@@ -9,6 +9,8 @@
     <dimen name="font_sizeLarge">40sp</dimen>
     <dimen name="font_sizeVLarge">50sp</dimen>
     <!-- layout dimen -->
+    <dimen name ="layout_widthSmall">60dp</dimen>
+    <dimen name ="layout_heightSmall">40dp</dimen>
     <dimen name="layout_marginTopSmall">10dp</dimen>
     <dimen name="layout_marginTop">16dp</dimen>
     <dimen name="layout_marginTopLg">20dp</dimen>

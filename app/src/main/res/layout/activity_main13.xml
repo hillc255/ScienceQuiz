@@ -32,44 +32,48 @@
             android:textAllCaps="false"
             android:textSize="@dimen/font_sizeSmall" />
 
-        <RadioGroup
-            android:id="@+id/radioGroup"
+        <CheckBox
+            android:id="@+id/checkBox1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/radioGroup_layoutMargin"
-            android:orientation="vertical">
+            android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
+            android:background="@color/grayLight"
+            android:checked="false"
+            android:text="@string/quiz12_1" />
 
-            <RadioButton
-                android:id="@+id/radioButton1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
-                android:background="@color/grayLight"
-                android:text="@string/quiz12_1" />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
+            android:background="@color/grayLight"
+            android:checked="false"
+            android:text="@string/quiz12_2" />
 
-            <RadioButton
-                android:id="@+id/radioButton2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
-                android:background="@color/grayLight"
-                android:text="@string/quiz12_2" />
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
+            android:background="@color/grayLight"
+            android:checked="false"
+            android:text="@string/quiz12_3" />
 
-            <RadioButton
-                android:id="@+id/radioButton3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/radioButton_layoutMarginBottom"
-                android:background="@color/grayLight"
-                android:text="@string/quiz12_3" />
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grayLight"
+            android:checked="false"
+            android:text="@string/quiz12_4" />
 
-            <RadioButton
-                android:id="@+id/radioButton4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/grayLight"
-                android:text="@string/quiz12_4" />
-        </RadioGroup>
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:text="@string/quiz12_5" />
+
 
         <!-- TextView 1 include file -->
         <include layout="@layout/include_textview1" />

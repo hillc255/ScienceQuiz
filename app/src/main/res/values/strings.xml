@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name"></string>
+    <string name="app_name">Science Quiz</string>
     <string name="title_activity_main2">Main2Activity</string>
 <!-- Splash page -->
     <string name="desc">This is a picture of the earth</string>
@@ -59,11 +59,9 @@
     <string name="quiz6_incorrect">Incorrect: Water boils at a lower temperature in Denver than Los Angeles is the correct answer.</string>
     <!-- quiz 7 -->
     <string name="desc7">There are 4 pictures displaying possible directions where light passes through a magnifying glass.</string>
-    <string name="quiz7">Which of these pictures best illustrates what happens when light passes through a magnifying glass?</string>
-    <string name="quiz7_1">1</string>
-    <string name="quiz7_2">2</string>
-    <string name="quiz7_3">3</string>
-    <string name="quiz7_4">4</string>
+    <string name="quiz7">Type the number for the picture which best illustrates what happens when light passes through a magnifying glass.</string>
+    <string name="quiz7_1">SUBMIT</string>
+    <string name="quiz7_2">enter</string>
     <string name="quiz7_correct">Correct: The answer is 3.</string>
     <string name="quiz7_incorrect">Incorrect: The correct answer is 3.</string>
     <!-- quiz 8 -->
@@ -104,11 +102,12 @@
     <string name="quiz11_incorrect">Incorrect: Jonas Salk developed the polio vaccine.</string>
     <!-- quiz 12 -->
     <string name="desc12">This is a picture of a stylized constellation wheel with zodiac signs.</string>
-    <string name="quiz12">Which of these terms is defined as the study of how the positions of stars and planets can influence human behavior?</string>
+    <string name="quiz12">Which term is defined as the study of how the positions of stars and planets can influence human behavior?</string>
     <string name="quiz12_1">Astrology</string>
     <string name="quiz12_2">Alchemy</string>
     <string name="quiz12_3">Astronomy</string>
     <string name="quiz12_4">Meteorology</string>
+    <string name="quiz12_5">Submit</string>
     <string name="quiz12_correct">Correct: Astrology is this study.</string>
     <string name="quiz12_incorrect">Incorrect: Astrology is the correct response.</string>
     <!-- quiz 13 -->
@@ -118,5 +117,4 @@
     <string name="quiz13_2">Total Number of Questions Answered Correctly</string>
     <string name="quiz13_3">Percentages reflect 3,278 adults that were part of a national survey in 2014.</string>
     <string name="quiz13_4">Take quiz again</string>
-
 </resources>

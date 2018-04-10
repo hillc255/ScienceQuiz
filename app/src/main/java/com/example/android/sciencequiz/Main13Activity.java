@@ -6,10 +6,12 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
-import android.widget.RadioButton;
-import android.widget.RadioGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
-import static com.example.android.sciencequiz.Constants.*;
+
+import static com.example.android.sciencequiz.Constants.CORRECT_RESPONSE_STRING;
+import static com.example.android.sciencequiz.Constants.INCORRECT_RESPONSE_STRING;
+import static com.example.android.sciencequiz.Constants.QUIZ_NUMBER_STRING;
 
 /**
  * This app displays a science quiz with multiple screens
@@ -17,10 +19,9 @@ import static com.example.android.sciencequiz.Constants.*;
  */
 public class Main13Activity extends AppCompatActivity {
 
-    Button nextButton;
+    Button nextButton, submitButton;
     int quizNumber;
-    private RadioGroup radioGroup;
-    private RadioButton radioButton;
+    private CheckBox checkBox1, checkBox2, checkBox3, checkBox4;
     TextView textView;
     String buttonSelection;
     int correctResponse;
@@ -52,61 +53,87 @@ public class Main13Activity extends AppCompatActivity {
         TextView textView1 = (TextView) findViewById(R.id.scoreCount);
         textView1.setText(correctResponse + "/" + incorrectResponse);
 
-        //Set up radio buttons
+        //Set up checkboxes
         correctResponse = getCorrectResponse();
         incorrectResponse = getIncorrectResponse();
 
-        //Radio button 1 is the correct answer
-        radioButton = (RadioButton) findViewById(R.id.radioButton1);
-        //Display correct answer in this textView
-        textView = (TextView) findViewById(R.id.answer);
+        //Initiate checkboxes and submit button
+        checkBox1 = findViewById(R.id.checkBox1);
+        checkBox2 = findViewById(R.id.checkBox2);
+        checkBox3 = findViewById(R.id.checkBox3);
+        checkBox4 = findViewById(R.id.checkBox4);
 
-        radioGroup = (RadioGroup) findViewById(R.id.radioGroup);
-        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        final Button nextButton = (Button) findViewById(R.id.nextButton);
+        nextButton.setVisibility(View.GONE);
 
-            @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
+        //Create listener for submitButton
+        submitButton = findViewById(R.id.buttonSubmit);
+        submitButton.setOnClickListener(new View.OnClickListener() {
 
-                //Disable all radio buttons once one is checked
-                int max = group.getChildCount();
-                for (int i = 0; i < max; i++) {
-                    group.getChildAt(i).setEnabled(false);
-                }
+            public void onClick(View v) {
 
-                //Next button set invisible unless radio button is checked
-                Button nextButton = (Button) findViewById(R.id.nextButton);
-                if (radioGroup.getCheckedRadioButtonId() == -1) {
-                    nextButton.setVisibility(View.GONE);
-                } else {
-                    nextButton.setVisibility(View.VISIBLE);
-                }
+                //Display correct answer in this textView
+                textView = (TextView) findViewById(R.id.answer);
+                if (checkBox1.isChecked() && !checkBox2.isChecked() && !checkBox3.isChecked() && !checkBox4.isChecked()) {
 
-                RadioButton radiobutton = (RadioButton) findViewById(checkedId);
-                //Set the checked radio button background color from hex string
-                radiobutton.setBackgroundColor(Color.parseColor("#7e7e7e"));
-                radiobutton.setTextColor(Color.parseColor("#ffffff"));
+                    //Set the checkbox background color from hex string
+                    checkBox1.setBackgroundColor(Color.parseColor("#7e7e7e"));
+                    checkBox1.setTextColor(Color.parseColor("#ffffff"));
 
-                //Determine if radio button selection is correct - display correct response
-                if (radioButton.isChecked()) {
+                    checkBox1.setEnabled(false);
+                    checkBox2.setEnabled(false);
+                    checkBox3.setEnabled(false);
+                    checkBox4.setEnabled(false);
+                    submitButton.setEnabled(false);
+
+                    //correct answer displays
                     textView.setText(R.string.quiz12_correct);
                     correctResponse = correctResponse + 1;
+
+                    //next button becomes visible
+                    nextButton.setVisibility(View.VISIBLE);
+
                 } else {
+                    //Set the checkbox background color from hex string of all checked checkboxes;
+                    if (checkBox1.isChecked()) {
+                        checkBox1.setBackgroundColor(Color.parseColor("#7e7e7e"));
+                        checkBox1.setTextColor(Color.parseColor("#ffffff"));
+                    }
+                    if (checkBox2.isChecked()) {
+                        checkBox2.setBackgroundColor(Color.parseColor("#7e7e7e"));
+                        checkBox2.setTextColor(Color.parseColor("#ffffff"));
+                    }
+                    if (checkBox3.isChecked()) {
+                        checkBox3.setBackgroundColor(Color.parseColor("#7e7e7e"));
+                        checkBox3.setTextColor(Color.parseColor("#ffffff"));
+                    }
+                    if (checkBox4.isChecked()) {
+                        checkBox4.setBackgroundColor(Color.parseColor("#7e7e7e"));
+                        checkBox4.setTextColor(Color.parseColor("#ffffff"));
+                    }
+                    checkBox1.setEnabled(false);
+                    checkBox2.setEnabled(false);
+                    checkBox3.setEnabled(false);
+                    checkBox4.setEnabled(false);
+                    submitButton.setEnabled(false);
+
+                    //incorrect answer displays
                     textView.setText(R.string.quiz12_incorrect);
                     incorrectResponse = incorrectResponse + 1;
+
+                    //next button becomes visible
+                    nextButton.setVisibility(View.VISIBLE);
                 }
 
                 //Display correct score
                 displayScoreCounter(correctResponse, incorrectResponse);
-
             }
-
         });
 
         //Find the Next button and assign a listener
-        Button button = (Button) findViewById(R.id.nextButton);
-        button.setOnClickListener(new View.OnClickListener()
+        Button button = findViewById(R.id.nextButton);
+        button.setOnClickListener(new View.OnClickListener() {
 
-        {
             public void onClick(View view) {
                 //Start new activity
                 Intent intent = new Intent(Main13Activity.this, Main14Activity.class);
@@ -171,7 +198,7 @@ public class Main13Activity extends AppCompatActivity {
      * @param incorrectResponse
      */
     private void displayScoreCounter(int correctResponse, int incorrectResponse) {
-        TextView scoreTextView = (TextView) findViewById(R.id.scoreCount);
+        TextView scoreTextView = findViewById(R.id.scoreCount);
         scoreTextView.setText(correctResponse + "/" + incorrectResponse);
     }
 
