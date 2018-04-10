@@ -4,7 +4,7 @@
 
 Name:  Science Quiz
 
-![Animated Science Quiz app](readme_assets/sciencequiz_animated.gif)
+![Animated Science Quiz app](readme_assets/sciencequiz.gif)
 
 This is an Android quiz application with 12 questions relating to science facts and principles.
 
