@@ -11,7 +11,7 @@ The questions and answers with 4 images were developed by the Pew Research Cente
 Eight additional images were selected and added to the quiz.
 
 <p align="center">
- <kbd><img width="300" height="533" src="readme_assets/sciencequiz_animated.gif"></kbd>
+ <kbd><img width="300" height="533" src="readme_assets/sciencequiz.gif"></kbd>
 </p>
 
 ## Code Description
