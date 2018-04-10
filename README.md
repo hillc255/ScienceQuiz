@@ -7,7 +7,6 @@ Name:  Science Quiz
 This is an Android quiz application with 12 questions relating to science facts and principles.
 
 The questions and answers with 4 images were developed by the Pew Research Center. <http://www.pewresearch.org/quiz/science-knowledge/>
-
 Eight additional images were selected and added to the quiz.
 
 ![Animated Science Quiz app](readme_assets/sciencequiz_animated.gif)
@@ -18,8 +17,10 @@ Each screen of the quiz, except for the splash and end screens, uses an Activity
 
 Below are 5 screen shots with the splash screen, a radio button unanswered and answered quuestion, a text input question and a checkbox question:
 
-![Splash screen with earth's profile in space](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme1.png)![Screen of radiobutton unanswered question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png)
-![Screen of radiobutton incorrect answer to the question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)![Screen of text input to the question about light passing through magnifying glass.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme4.png)
+![Splash screen with earth's profile in space](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme1.png)
+![Screen of radiobutton unanswered question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png)
+![Screen of radiobutton incorrect answer to the question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)
+![Screen of text input to the question about light passing through magnifying glass.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme4.png)
 ![Screen of checkboxs to the question about stars, planets and human behavoir.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme5.png)
 
 ## Motivation
