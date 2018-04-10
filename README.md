@@ -4,9 +4,9 @@
 
 Name:  Science Quiz
 
-![Animated Science Quiz app](readme_assets/sciencequiz_animated.gif)
-
 This is an Android quiz application with 12 questions relating to science facts and principles.
+
+![Animated Science Quiz app](readme_assets/sciencequiz_animated.gif)
 
 The questions and answers with 4 images were developed by the Pew Research Center. <http://www.pewresearch.org/quiz/science-knowledge/>
 
