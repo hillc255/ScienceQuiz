@@ -23,7 +23,7 @@ Below are 3 screen shots with the splash screen, an unanswered quiz screen and a
 ![Screen of radiobutton unanswered question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme2.png)
 ![Screen of radiobutton incorrect answer to the question about waves used for cellphone calls.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme3.png)
 ![Screen of text input to the question about light passing through magnifying glass.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme4.png)
-![Screen of checkboxs to the question about stars, planets and human behavoir.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme5.png)]
+![Screen of checkboxs to the question about stars, planets and human behavoir.](https://github.com/hillc255/ScienceQuiz/blob/master/app/src/main/res/drawable/readme5.png)
 
 ## Motivation
 
