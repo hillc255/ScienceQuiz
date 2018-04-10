@@ -12,6 +12,10 @@ Eight additional images were selected and added to the quiz.
 
 ![Animated Science Quiz app](readme_assets/sciencequiz_animated.gif)
 
+<p align="center">
+ <kbd><img width="300" height="533" src="readme_assets/sciencequiz_animated.gif"></kbd>
+</p>
+
 ## Code Description
 
 Each screen of the quiz, except for the splash and end screens, uses an Activity and Intent to capture the questions and answers along with displaying the radio buttons, text input, checkboxes and images.  Variables of score and question numbers are passed through with intents.
