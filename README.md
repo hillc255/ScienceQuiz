@@ -14,7 +14,7 @@ Eight additional images were selected and added to the quiz.
 
 ## Code Description
 
-Each screen of the quiz, except for the splash and end screens, uses an Activity and Intent to capture the questions and answers along with displaying the radio buttons and images.  Variables of score and question numbers are passed through with intents.
+Each screen of the quiz, except for the splash and end screens, uses an Activity and Intent to capture the questions and answers along with displaying the radio buttons, text input, checkboxes and images.  Variables of score and question numbers are passed through with intents.
 
 Below are 5 screen shots with the splash screen, a radio button unanswered and answered quuestion, a text input question and a checkbox question:
 
