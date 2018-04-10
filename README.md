@@ -10,8 +10,6 @@ The questions and answers with 4 images were developed by the Pew Research Cente
 
 Eight additional images were selected and added to the quiz.
 
-![Animated Science Quiz app](readme_assets/sciencequiz_animated.gif)
-
 <p align="center">
  <kbd><img width="300" height="533" src="readme_assets/sciencequiz_animated.gif"></kbd>
 </p>
